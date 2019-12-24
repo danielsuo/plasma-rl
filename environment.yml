@@ -1,0 +1,21 @@
+name: plasma-rl
+channels:
+  - default
+  - conda-forge
+  - anaconda
+  - quantstack
+dependencies:
+  - numpy
+  - scipy
+  - jupyter
+  - ipython
+  - flake8
+  - matplotlib
+  - pandas
+  - scikit-learn
+  - requests
+  - click
+  - tqdm
+  - keras
+  - pip:
+    - clickutil
