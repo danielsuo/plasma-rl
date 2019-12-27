@@ -2,7 +2,22 @@
 
 pip install -e .
 
-git clone https://github.com/PPPLDeepLearning/plasma-python
-pushd plasma-python
-python setup.py install
+mkdir -p deps
+
+pushd deps
+
+if [ ! -d plasma-python ]; then
+  git clone https://github.com/PPPLDeepLearning/plasma-python
+  pushd plasma-python
+  pip install -e .
+  popd
+fi
+
+if [ ! -d TigerForecast ]; then
+  git clone https://github.com/MinRegret/TigerForecast
+  pushd TigerForecast
+  pip install -e .
+  popd
+fi
+
 popd

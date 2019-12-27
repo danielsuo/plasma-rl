@@ -1,9 +1,9 @@
 from setuptools import setup, find_packages
 
-setup(name="plasma-rl",
+setup(name="plasmarl",
       version="0.0.1",
-      description="plasma-rl",
-      url="https://github.com/danielsuo/plasma-rl",
+      description="plasmarl",
+      url="https://github.com/danielsuo/plasmarl",
       author="Daniel Suo",
       license="MIT",
       packages=find_packages(),
@@ -19,6 +19,7 @@ setup(name="plasma-rl",
           "click",
           "requests",
           "tqdm",
+          "theano",
           "keras",
           "clickutil"
       ])

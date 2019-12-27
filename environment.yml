@@ -17,5 +17,6 @@ dependencies:
   - click
   - tqdm
   - keras
+  - theano
   - pip:
     - clickutil
