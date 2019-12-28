@@ -79,10 +79,10 @@ class FRNNMethod(Method):
 
     def initialize(self, path):
         self.model = load_model(path)
-        print(model.summary())
+        self.model.summary()
 
     def predict(self, x):
-        pass
+        return self.model.predict(x)
 
     def forecast(self, x, timeline=1):
         pass
