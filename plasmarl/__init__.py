@@ -79,6 +79,7 @@ class FRNNMethod(Method):
 
     def initialize(self, path):
         self.model = load_model(path)
+        self.model.reset_states()
         self.model.summary()
 
     def predict(self, x):
